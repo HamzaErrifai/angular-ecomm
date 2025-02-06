@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.disabled {
+  pointer-events: none;
+  color: gray;
+  background-color: gray;
+}
