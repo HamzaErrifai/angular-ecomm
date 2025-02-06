@@ -10,7 +10,7 @@ import { Component, input, output } from '@angular/core';
     >
       <div [class]="svgIconSrc() ? 'flex' : ''">
         @if (svgIconSrc()) {
-        <img src="{{ svgIconSrc() }}" class="flexh-6 w-6" alt="" srcset="" />
+        <img src="{{ svgIconSrc() }}" class="flex h-6 w-6" alt="" srcset="" />
         }
         <span></span>
         {{ label() }}
