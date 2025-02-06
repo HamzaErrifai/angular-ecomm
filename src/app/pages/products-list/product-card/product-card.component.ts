@@ -18,7 +18,6 @@ import { CartService } from '../../../services/cart.service';
           <app-primary-btn
             label="Add to cart"
             svgIcon="svgscart.svg"
-            class="mt-3"
             (btnClicked)="cartService.addToCart(product())"
           />
         </div>

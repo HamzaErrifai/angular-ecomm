@@ -5,7 +5,7 @@ import { Component, input, output } from '@angular/core';
   imports: [],
   template: `
     <button
-      class="bg-blue-500 text-white w-full cursor-pointer px-5 py-2 rounded-xl shadow-md hover:opacity-90"
+      class="bg-blue-500 text-white w-full cursor-pointer mt-3 px-5 py-2 rounded-xl shadow-md hover:opacity-90"
       (click)="btnClicked.emit()"
     >
       <div [class]="svgIconSrc() ? 'flex' : ''">
