@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { Product } from '../../components/header/products.model';
+import { Product } from '../../models/products.model';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { GroupBtnItemComponent } from '../../components/group-btn-item/group-btn-item.component';
 

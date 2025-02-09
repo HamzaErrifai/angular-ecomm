@@ -1,5 +1,5 @@
 import { Component, inject, input } from '@angular/core';
-import { Product } from '../../../components/header/products.model';
+import { Product } from '../../../models/products.model';
 import { PrimaryBtnComponent } from '../../../components/primary-btn/primary-btn.component';
 import { CartService } from '../../../services/cart.service';
 
@@ -23,10 +23,10 @@ import { CartService } from '../../../services/cart.service';
         </div>
         <span
           class="absolute top-2 right-3 text-sm font-bold"
-          [class]="product().stock ? 'text-green-500' : 'text-red-500'"
+          [class]="product().rating.count ? 'text-green-500' : 'text-red-500'"
         >
-          @if (product().stock) {
-          {{ product().stock }} left }@else { Out of stock }
+          @if (product().rating.count) {
+          {{ product().rating.count }} left }@else { Out of rating.count }
         </span>
       </div>
     </div>
